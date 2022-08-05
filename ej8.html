@@ -8,7 +8,19 @@
 </head>
 <body>
     <script>
-        let numer = 0;
+        let par = 0;
+        let impar = 0;
+        
+        for (let index = 0; index < 5; index++) {
+            let numero = parseInt(prompt("Inserte número"));   
+            if(numero%2==0) {
+                par++
+            } else impar ++
+        } 
+        
+        console.log("Par",par)
+        console.log("impar", impar)
+
     </script>
 </body>
 </html>
