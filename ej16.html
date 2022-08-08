@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let vector = []; 
+        let suma = 0;
+        let sumaMayores = 0;
+        let mayoresCincuenta = 0;
+
+        for(let i=0; i < 8; i++) {
+            let num = parseInt(prompt("Ingrese número:"));
+            vector.push(num);
+            suma += num;
+            if(num > 36) {
+                sumaMayores += num;
+            }
+            if(num >= 50) {
+                mayoresCincuenta++
+            }
+        
+        }
+
+        console.log(`La suma de todos los vectores es de ${suma}`); 
+        console.log(`La suma de todos los vectores, mayores de 36, es de ${sumaMayores}`); 
+        console.log(`Hay ${mayoresCincuenta} vectores mayores a 50`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const manana = [];
+        const tarde = [];
+        const noche = [];
+        let sumaManana = 0;
+        let sumaTarde = 0;
+        let sumaNoche = 0;
+
+        for(let i= 0; i < 5; i++) {
+            let pregunta = parseInt(prompt(`Edades mañana`));
+            manana.push(pregunta);
+            sumaManana += pregunta;
+        }
+
+        for(let i= 0; i < 6; i++) {
+            let pregunta = parseInt(prompt(`Edades tarde`));
+            tarde.push(pregunta);
+            sumaTarde += pregunta;
+        }
+
+        for(let i= 0; i < 11; i++) {
+            let pregunta = parseInt(prompt(`Edades noche`));
+            noche.push(pregunta);
+            sumaNoche += pregunta;
+        }
+
+        promedioManana = (Math.round(sumaManana/5));
+        promedioTarde = (Math.round(sumaTarde/6));
+        promedioNoche = (Math.round(sumaNoche/11));
+
+        console.log(promedioManana)
+        console.log(promedioTarde)
+        console.log(promedioNoche)
+
+        if (promedioManana > promedioNoche && promedioManana > promedioTarde){
+            console.log(`La mañana tiene un promedio mayor de edades`)
+        } else if (promedioManana < promedioNoche && promedioNoche > promedioTarde) {
+            console.log("La noche tiene un promedio mayor de edades")
+        } else if (promedioManana < promedioTarde && promedioNoche < promedioTarde) {
+            console.log("La tarde tiene un promedio mayor de edades")
+        }
+
+    </script>
+</body>
+</html>

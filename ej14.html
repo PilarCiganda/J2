@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let negativos= 0;
+        let positivos= 0;
+        let multiplos= 0;
+        let suma = 0;
+
+        for(let i=0; i < 10; i++) {
+            let valor = parseInt(prompt(`Ingrese valor entero`));
+            if(valor < 0) {
+                negativos++
+            } else if (valor > 0) {
+                positivos++
+            } 
+            if (valor%15 == 0) {
+                multiplos++
+            }
+            if (valor%2 == 0) {
+                suma += valor
+                
+            }
+        }
+
+        console.log(`Negativos: ${negativos}`); 
+        console.log(`Positivos: ${positivos}`); 
+        console.log(`Múltiplos de 15: ${multiplos}`); 
+        console.log(`La suma de los números pares es de: ${suma}`)
+    </script>
+</body>
+</html>

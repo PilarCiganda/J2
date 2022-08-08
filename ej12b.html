@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    let equilatero = 0;
+    let isosceles = 0;
+    let escaleno = 0;
+
+        for(let i= 0; i < 4; i++) {
+            let ladoA = parseInt(prompt(`Inserte medida del lado A`));
+            let ladoB = parseInt(prompt(`Inserte medida del lado B`));
+            let ladoC = parseInt(prompt(`Inserte medida del lado C`));
+        if (ladoA == ladoB && ladoB == ladoC) {
+            console.log("Equilátero")
+            equilatero++;
+        } else if (ladoA != ladoB && ladoB != ladoC && ladoC != ladoA) {
+            console.log("Escaleno")
+            escaleno++;
+        } else if(ladoA == ladoB || ladoB == ladoC || ladoC == ladoA) {
+            console.log("Isósceles")
+            isosceles++;
+        }
+        } 
+
+        console.log(`Hay ${equilatero} triángulos equiláteros`) 
+        console.log(`Hay ${escaleno} triángulos escalenos`)
+        console.log(`Hay ${isosceles} triángulos isosceles`)
+
+        if (equilatero < escaleno && equilatero < isosceles) {
+            console.log("hay menor cantidad de triángulos equiláteros")
+        } else if (escaleno < equilatero && escaleno < isosceles) {
+            console.log("hay menor cantidad de triángulos escalenos")
+        } else if (isosceles < equilatero && isosceles < escaleno) {
+            console.log("hay menor cantidad de triángulos isosceles")
+        }
+    </script>
+</body>
+</html>

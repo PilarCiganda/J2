@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let valorX = 0;
+    let valorY = 0;
+    let cuadranteUno = 0;
+    let cuadranteDos = 0;
+    let cuadranteTres = 0;
+    let cuadranteCuatro = 0;
+        
+        for(let i=0; i<2; i++) {
+            let valorX = parseInt(prompt("Inserte valor de x"));
+            let valorY = parseInt(prompt("Inserte valor de y"));
+         if (valorX > 0 && valorY  > 0) {
+            cuadranteUno++;
+        } else if (valorX  > 0 && valorY < 0) {
+            cuadranteDos++;
+        } else if (valorX  < 0 && valorY < 0) {
+            cuadranteTres++;
+        } else if (valorX  < 0 && valorY > 0) {
+            cuadranteCuatro++;
+        }
+        }
+
+        console.log(`Puntos en cuadrante 1: ${cuadranteUno}`);
+        console.log(`Puntos en cuadrante 2: ${cuadranteDos}`);
+        console.log(`Puntos en cuadrante 3: ${cuadranteTres}`);
+        console.log(`Puntos en cuadrante 4: ${cuadranteCuatro}`)
+    </script>
+</body>
+</html>

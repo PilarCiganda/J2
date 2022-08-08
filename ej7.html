@@ -8,16 +8,30 @@
 </head>
 <body>
     <script>
-        let listaUno = [1, 1, 12];
-        let listaDos = [12, 1, 1]
+    const listaUno = [];
+    const listaDos = [];
+    let acumuladoListaUno = 0;
+    let acumuladoListaDos = 0;
 
-        if (listaUno[0] + listaUno[1] + listaUno[2] > listaDos[0] + listaDos[1] + listaDos[2]) {
-            console.log("Lista uno mayor")
-        } else if (listaUno[0] + listaUno[1] + listaUno[2] < listaDos[0] + listaDos[1] + listaDos[2]) {
-            console.log("Lista dos mayor")
-        } else if(listaUno[0] + listaUno[1] + listaUno[2] == listaDos[0] + listaDos[1] + listaDos[2]) {
-            console.log("Listas iguales")
+        for(let i= 0; i < 6; i++) {
+            if(i<3) {
+                let uno = parseInt(prompt("Inserte valor para la lista 1:"));
+                listaUno.push(uno);
+                acumuladoListaUno += uno;
+            } else {
+                let dos = parseInt(prompt("Inserte valor para la lista 2:"))
+                listaDos.push(dos);
+                acumuladoListaDos += dos; 
+            }
         }
-    </script>
+
+        if(acumuladoListaUno > acumuladoListaDos) {
+            console.log(`La lista uno es mayor`)
+        } else if (acumuladoListaDos > acumuladoListaUno) {
+            console.log(`La lista dos es mayor`)
+        } else {
+            console.log(`Las listas son iguales`)
+        }
+    </script> 
 </body>
 </html>

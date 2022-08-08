@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let vectorUno = [];
+        let vectorDos = [];
+        
+
+        for(let i=0; i < 6; i++) {
+            let valor = parseInt(prompt("Valor de vector:"));
+            if(i < 3) {
+                vectorUno.push(valor);
+            } else {
+                vectorDos.push(valor);
+            }
+        }
+
+        console.log(vectorUno);
+        console.log(vectorDos);
+
+        const suma = (a, b) => a + b;
+        suma(vectorUno[0], vectorDos[0])
+        suma(vectorUno[1], vectorDos[1])
+        suma(vectorUno[2], vectorDos[2])
+
+        let vectorTres = [suma(vectorUno[0], vectorDos[0]), suma(vectorUno[1], vectorDos[1]), suma(vectorUno[2], vectorDos[2])];
+        console.log(vectorTres);
+
+
+    </script>
+</body>
+</html>
