@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let vectorUno = [];
+        let vectorDos = [];
+        let tamanho = parseInt(prompt("Elija largo del vector"));
+
+        for(let i=0; i < tamanho; i++) {
+            let valor = parseInt(prompt("Valor de vector:"));
+            vectorUno.push(valor);
+        }
+
+        for(let i=0; i < tamanho; i++) {
+            let valor = parseInt(prompt("Valor de vector:"));
+            vectorDos.push(valor);
+        }
+
+        console.log(vectorUno);
+        console.log(vectorDos);
+
+        let vectorTres= [];
+
+        for(let i=0; i < tamanho; i++) {
+            let suma = vectorUno[i] + vectorDos[i];
+            vectorTres.push(suma);
+        }
+
+        console.log(vectorTres)
+
+    </script>
+</body>
+</html>
