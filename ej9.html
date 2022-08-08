@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let altura = 0;
+        let base = 0;
+        let trianguloGrande = 0;
+
+        for(i=0; i < 3; i++) {
+            let altura = parseInt(prompt("Medida de la altura:"));
+            console.log("La altura mide: "+ altura);
+            let base = parseInt(prompt("Medida de la base:"));
+            console.log("La base mide: "+ base);
+            let superficie = (altura*base)/2;
+            console.log("La superficie total del triángulo es de: " + superficie);
+            if (superficie > 12) {
+            trianguloGrande++
+            }
+        }
+
+        console.log("Hay " + trianguloGrande + " triángulos con una superficie mayor a 12");
+    </script>
+</body>
+</html>
