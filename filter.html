@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Mostrar postre solo cuando el plato principal sea sushi
+
+    let almuerzos = [
+        {platoPrincipal: "tacos", postre: "brownie"},
+        {platoPrincipal: "pizza", postre: "arroz con leche"},
+        {platoPrincipal: "sushi", postre: "cookies"},
+        {platoPrincipal: "asado", postre: "masitas"},
+        {platoPrincipal: "sushi", postre: "volcan"},
+        {platoPrincipal: "sushi", postre: "helado"},
+    ];
+    
+    //let postresParaPlatosSushi = [];
+    //for(let i= 0; i <almuerzos.length; i++) {
+    //    if (almuerzos[i].platoPrincipal === "sushi") {
+    //        postresParaPlatosSushi.push(almuerzos[i].postre)
+     //   }
+    //}
+    //console.log(postresParaPlatosSushi);
+
+    let postresParaPlatosSushi = almuerzos
+        .filter(function(almuerzo) {
+            return almuerzo.platoPrincipal === "sushi"
+        })
+        .map(function(almuerzo){
+            return almuerzo.postre
+        })
+
+        console.log(postresParaPlatosSushi);
+    
+    </script>
+</body>
+</html>

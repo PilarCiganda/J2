@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // objetivo del ejercicio: informar al chef, solamente, los platos principales.
+        let almuerzos = [
+            {platoPrincipal: "tacos", postre: "brownie"},
+            {platoPrincipal: "pizza", postre: "arroz con leche"},
+            {platoPrincipal: "sushi", postre: "cookies"},
+            {platoPrincipal: "asado", postre: "masitas"},
+        ];
+
+        //let principal = [];
+        //for(let i=0; i < almuerzos.length; i++) {
+        //    principal.push(almuerzos[i].platoPrincipal)
+        //}
+
+        //console.log(principal)
+
+    // repetimos pero ahora usando map()
+         
+    let principal = almuerzos.map(function(almuerzo) {
+        return almuerzo.platoPrincipal
+    })
+    console.log(principal)
+    </script>
+</body>
+</html>
