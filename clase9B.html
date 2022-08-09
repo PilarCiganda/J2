@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const alumnosFsdb = [
+            {nombre: "Pilar", nota: 12},
+            {nombre: "Josefina", nota: 9},
+            {nombre: "Irene", nota: 10},
+            {nombre: "Daniel", nota: 7},
+        ];
+
+        const promedios = (alumnos) => {
+            let sumaNotas = 0;
+            for (let i=0; i < alumnos.length; i++) {
+                sumaNotas += alumnos[i].notas;
+            }
+            return sumaNotas / alumnos.length
+        }
+
+        console.log(promedios(alumnosFsdb));
+
+    </script>
+</body>
+</html>
