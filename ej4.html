@@ -8,13 +8,27 @@
 </head>
 <body>
     <script>
-        let altura1 = parseInt(prompt("Ingrese altura en cm"));
-        let altura2 = parseInt(prompt("Ingrese altura en cm"));
-        let altura3 = parseInt(prompt("Ingrese altura en cm"));
-        let altura4 = parseInt(prompt("Ingrese altura en cm"));
-        let altura5 = parseInt(prompt("Ingrese altura en cm"));
+       // let altura1 = parseInt(prompt("Ingrese altura en cm"));
+        //let altura2 = parseInt(prompt("Ingrese altura en cm"));
+        //let altura3 = parseInt(prompt("Ingrese altura en cm"));
+        //let altura4 = parseInt(prompt("Ingrese altura en cm"));
+        //let altura5 = parseInt(prompt("Ingrese altura en cm"));
 
-        console.log((altura1 + altura2 + altura3 + altura4 + altura5)/5);
-    </script>
+        //console.log((altura1 + altura2 + altura3 + altura4 + altura5)/5);
+        
+       // const alturas = [];
+        let sumaAlturas = 0;
+
+        for(let i=0; i<6; i++) { 
+            let numeros = parseInt(prompt("Indique altura:"));
+            //alturas.push(numeros);
+            sumaAlturas += numeros;    
+        }
+
+        const promedio = sumaAlturas / alturas.length;
+        console.log(promedio);
+   
+   
+   </script>
 </body>
 </html>
