@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    //Hacer una función que permita ingresar 5 voltajes, y si el promedio es mayor a 220, que devuelva “VOLTAJE INCORRECTO”.
+
+    const voltajeMaximo = 220;
+    
+    function Promedio (volateje1, voltaje2, voltaje3, voltaje4, voltaje5) {
+        let prom = (volateje1 + voltaje2 + voltaje3 + voltaje4 +voltaje5)/5; 
+        if (prom > voltajeMaximo) {
+        console.log("VOLTAJE INCORRECTO");
+        }  else {
+            console.log(prom)
+        }
+     }
+
+     Promedio(150, 200, 300, 100, 100);
+
+</script>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    // Cargar 2 vectores con 10 números cada uno. El programa debe crear un tercer vector con los números que se repiten en ambos y mostrarlos por pantalla.
+
+    let vectorUno = [];
+    let vectorDos = [];
+    let vectorTres = [];
+
+    for (let i=0; i < 20; i++) {
+        let pregunta = parseInt(prompt("Ingrese valor para el vector:"));
+        if (i < 10) {
+            vectorUno.push(pregunta);
+        } else {
+            vectorDos.push(pregunta);
+        }
+            
+    } 
+    
+    for (let x=0; x<vectorUno.length; x++) {
+        for(let y=0; y<vectorDos.length; y++) {
+            if(vectorUno[x] === vectorDos[y]) {
+                vectorTres.push(vectorUno[x]);
+            }
+        }
+    } 
+// lo ideal seria usar un algoritmo de busqueda.Como faster search.
+    console.log(vectorTres);
+</script>

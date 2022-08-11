@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="info">Máximo 100 caracteres</div>
+    <textarea id="texto" onkeypress="return limita(100)" onkeyup="actualizarDivInfo(100)"></textarea>
+</body>
+</html>
+
+<script>
+const textArea = document.getElementById("texto");
+const info = document.getElementById("info");
+    
+function limita(maximoCaracteres) {
+    if(textArea.value.length >= maximoCaracteres) {
+        return false;
+    } //else { No es necesario, porque si no se cumple el if, va a ir directo al return true.
+        return true;
+    //}
+ }
+
+ function actualizarDivInfo (maximoCaracteres) {
+
+    if (textArea.value.length >= maximoCaracteres) {
+        info.textContent = "Máximo 100 caracteres"
+    } else {
+        const diff = maximoCaracteres - textArea.value.length;
+        info.textContent = `Puede seguir escribiendo ${diff} caracteres`
+    }
+ }
+
+</script>

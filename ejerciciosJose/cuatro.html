@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Hacer una función que reciba el tiempo en minutos y lo transforme en horas y minutos. Ejemplo: Ingreso 190 mins y devuelve “3.10” hs.
+
+        const convertor = (minutos) => {
+            let horas = minutos/60;
+            let cantidadHoras = Math.trunc(horas);
+            let cantidadMinutos = horas - cantidadHoras;
+            let minutosRestantes = Math.round(cantidadMinutos*60);
+            console.log(`El resultado es: ${cantidadHoras}hs, ${minutosRestantes}min`)
+            return horas;
+        }   
+        
+        convertor(125);
+
+        
+    </script>
+</body>
+</html>
